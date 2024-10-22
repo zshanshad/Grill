@@ -1,0 +1,59 @@
+@import"variables";
+footer{
+    background-color: $secondary-Color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+      .list-unstyled{
+
+      
+        li{
+            
+            a{
+         text-decoration: none;
+            color: white;
+            }
+        }
+    }
+    
+    a
+    {
+        
+        
+        i{
+            text-decoration: none;
+            
+            color: white;
+
+        }
+    }
+   
+    h3{
+        color: $accent-Color;
+        font-size:20px;
+        font-family:$font-Color;
+        font-weight: bold;
+        
+    }
+    p{
+        color: $accent-Color;
+        font-size:17px ;
+        font-family:$font-Color ;
+
+    }
+  
+}
+
+@media(max-width:991px){
+    footer{
+        h3{
+            margin-top: 25px;
+        }
+    }
+}
+@media(max-width:512px){
+    footer{
+    padding-top: 60px;
+       padding-bottom: 60px;
+    }
+}

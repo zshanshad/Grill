@@ -1,0 +1,67 @@
+@import"variables";
+
+.overlay{
+    background-image:linear-gradient(rgba(255,210,62,.8),rgba(255,210,62,.8)), url(../img/overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+   
+     p{
+       font-family: $font-Color;
+       color: $secondary-Color;
+       font-size: 40px;
+     }
+
+     h3{
+           
+        font-size:80px ;
+        font-family: $font-family;
+        color: $secondary-Color;
+  
+      }
+}
+
+
+@media(max-width:991px){
+    .overlay{
+      
+        padding-top: 180px;
+        padding-bottom: 180px;
+    
+       
+         p{
+        
+           font-size: 30px;
+         }
+    
+         h3{
+               
+            font-size:60px ;
+           
+      
+          }
+    }
+}
+
+@media(max-width:512px){
+    .overlay{
+      
+        padding-top: 140px;
+        padding-bottom: 140px;
+    
+    
+         p{
+        
+           font-size: 22px;
+         }
+    
+         h3{
+               
+            font-size:35px ;
+           
+      
+          }
+    }
+}

@@ -1,0 +1,589 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 47, 47, 0.8)), to(rgba(47, 47, 47, 0.8))), url(../img/overlay.png);
+  background-image: linear-gradient(rgba(47, 47, 47, 0.8), rgba(47, 47, 47, 0.8)), url(../img/overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+}
+
+.header img {
+  margin-right: 290px;
+}
+
+.header .navbar .navbar-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.header .right h1 {
+  margin-top: 150px;
+  font-size: 90px;
+  font-family: "Grand Hotel", cursive;
+  color: #ffc200;
+}
+
+.header .right p {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.header .right button {
+  border: none;
+  background-color: #ffc200;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1238px) {
+  .header img {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1208px) {
+  .header img {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar .navbar-nav li a {
+    text-align: center;
+  }
+  .header .navbar .navbar-nav li a:first-child {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 512px) {
+  .header {
+    padding-bottom: 100px;
+  }
+  .header img {
+    margin-right: 0px;
+  }
+  .header .right h1 {
+    margin-top: 80px;
+    font-size: 80px;
+  }
+  .header .right p {
+    font-size: 21px;
+  }
+  .header .right button {
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.best .text {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.best .text h1 {
+  font-size: 70px;
+  font-family: "Grand Hotel", cursive;
+  color: #333333;
+}
+
+.best .text p {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 20px;
+}
+
+.best .seller {
+  padding-bottom: 80px;
+}
+
+.best .seller img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.best .seller h3 {
+  font-size: 40px;
+  font-family: "Grand Hotel", cursive;
+  color: #333333;
+}
+
+.best .seller p {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 18px;
+}
+
+@media (max-width: 512px) {
+  .best .text {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .best .text h1 {
+    font-size: 55px;
+  }
+  .best .text p {
+    font-size: 18px;
+  }
+  .best .seller img {
+    width: 150px;
+    height: 150px;
+  }
+  .best .seller h3 {
+    font-size: 30px;
+  }
+  .best .seller p {
+    font-size: 16px;
+  }
+}
+
+.taste {
+  background-color: #333333;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.taste .left img {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.taste .right h1 {
+  font-size: 80px;
+  font-family: "Grand Hotel", cursive;
+  color: #ffc200;
+}
+
+.taste .right p {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.taste .right button {
+  border: none;
+  background-color: #ffc200;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .taste .left img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+  .taste .right h1 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 512px) {
+  .taste {
+    padding-bottom: 80px;
+    padding-bottom: 80px;
+  }
+  .taste .left img {
+    width: 200px;
+    height: 200px;
+  }
+  .taste .right h1 {
+    font-size: 60px;
+  }
+  .taste .right p {
+    font-size: 20px;
+  }
+  .taste .right button {
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.statics {
+  background-color: #333333;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.statics .text h1 {
+  font-size: 70px;
+  font-family: "Grand Hotel", cursive;
+  color: #ffc200;
+}
+
+.statics .text p {
+  margin-bottom: 80px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.statics img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 991px) {
+  .statics img {
+    margin-bottom: 25px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 512px) {
+  .statics {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.chicken {
+  background-color: #333333;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.chicken .left h1 {
+  font-size: 80px;
+  font-family: "Grand Hotel", cursive;
+  color: #ffc200;
+}
+
+.chicken .left p {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.chicken .left button {
+  border: none;
+  background-color: #ffc200;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.chicken .right img {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+@media (max-width: 991px) {
+  .chicken .left h1 {
+    margin-top: 30px;
+  }
+  .chicken .right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 512px) {
+  .chicken {
+    padding-bottom: 40px;
+    padding-bottom: 70px;
+  }
+  .chicken .left h1 {
+    font-size: 60px;
+  }
+  .chicken .left p {
+    font-size: 20px;
+  }
+  .chicken .left button {
+    font-size: 15px;
+    width: 160px;
+    height: 50px;
+  }
+  .chicken .right img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.overlay {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 210, 62, 0.8)), to(rgba(255, 210, 62, 0.8))), url(../img/overlay.png);
+  background-image: linear-gradient(rgba(255, 210, 62, 0.8), rgba(255, 210, 62, 0.8)), url(../img/overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.overlay p {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 40px;
+}
+
+.overlay h3 {
+  font-size: 80px;
+  font-family: "Grand Hotel", cursive;
+  color: #333333;
+}
+
+@media (max-width: 991px) {
+  .overlay {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  .overlay p {
+    font-size: 30px;
+  }
+  .overlay h3 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 512px) {
+  .overlay {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  .overlay p {
+    font-size: 22px;
+  }
+  .overlay h3 {
+    font-size: 35px;
+  }
+}
+
+.subscribe {
+  background-color: #f4f4f4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.subscribe h1 {
+  font-size: 70px;
+  font-family: "Grand Hotel", cursive;
+  color: #333333;
+}
+
+.subscribe p {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.subscribe form input {
+  max-width: 500px;
+  min-height: 50px;
+}
+
+.subscribe form button {
+  border: none;
+  background-color: #ffc200;
+  font-size: 20px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 512px) {
+  .subscribe {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .subscribe h1 {
+    font-size: 60px;
+  }
+  .subscribe p {
+    font-size: 18px;
+  }
+  .subscribe form input {
+    max-width: 200px;
+    min-height: 40px;
+  }
+  .subscribe form button {
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 385px) {
+  .subscribe {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .subscribe form input {
+    max-width: 150px;
+    min-height: 40px;
+  }
+  .subscribe form button {
+    font-size: 14px;
+    width: 105px;
+    height: 40px;
+  }
+}
+
+footer {
+  background-color: #333333;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer .list-unstyled li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a i {
+  text-decoration: none;
+  color: white;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 991px) {
+  footer h3 {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 512px) {
+  footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
